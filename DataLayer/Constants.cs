@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    class Constants
+    public class Constants
     {
+        public static String ConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=FacultyDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
     }
 }

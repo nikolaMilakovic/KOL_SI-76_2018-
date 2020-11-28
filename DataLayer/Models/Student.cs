@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
-    class Class1
+    public class Student
     {
+        public int Id { get; set;}
+        public String Name { get; set; }
+        public String IndexNumber { get; set; }
+        public decimal AverageMark { get; set; }
+
+
     }
 }
