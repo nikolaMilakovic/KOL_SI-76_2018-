@@ -46,12 +46,14 @@ namespace DataLayer
             {
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
+                sqlConnection.Open();
                 sqlCommand.CommandText =
-                    String.Format("INSERT INTO Students VALUES { '{0}' '{1}' {2}) "
-                    ,s.Name, s.IndexNumber, s.AverageMark);
+                    String.Format("INSERT INTO Students VALUES ('{0}', '{1}', {2}) )",
+                    s.Name, s.IndexNumber, s.AverageMark);
 
                 return sqlCommand.ExecuteNonQuery();
             }
+            
         }
 
 
